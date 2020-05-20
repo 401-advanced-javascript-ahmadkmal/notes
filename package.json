@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/401-advanced-javascript-ahmadkmal/notes#readme",
   "dependencies": {
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.5",
+    "mongoose": "^5.9.15"
   },
   "devDependencies": {
     "jest": "^26.0.1"
