@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage --verbose"
+    "test": "jest --coverage --verbose",
+    "test-watch": "jest --coverage --verbose --watchAll"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/401-advanced-javascript-ahmadkmal/notes#readme",
   "dependencies": {
+    "@code-fellows/supergoose": "^1.0.2",
     "minimist": "^1.2.5",
     "mongoose": "^5.9.15"
   },

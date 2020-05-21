@@ -5,7 +5,10 @@ jest.spyOn(global.console, 'log');
 
 describe('note Module', () => {
   it('does nothing when note() is called with invalid options', () => {
-    const note = new Note();
+    const note = new Note({
+        action:'nn',
+        payload:'will not add this note please'
+    });
     expect(console.log).not.toHaveBeenCalled();
   });
   it('logs options when fetch() with options', () => {

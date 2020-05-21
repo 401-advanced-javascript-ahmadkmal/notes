@@ -4,15 +4,17 @@ const Input = require('../lib/input.js');
 jest.mock('minimist');
 minimist.mockImplementation(() => {
   return {
-    add: 'note to be addded',
+      _:'',
+    add: 'note to be added',
+    category : "bye"
   };
 });
 describe('INPUT MODULE', () => {
   describe('validateor()', () => {
-    it('retern the same value if input equal d ', () => {
-      const input = new Input();
-      expect(input.actionValedator('d')).toEqual('d');
-    });
+    // it('retern the same value if input equal d ', () => {
+    //   const input = new Input("--d hi");
+    //   expect(input.actionValedator('d')).toEqual('d');
+    // });
     it('retern the same value if input equal add', () => {
         const input = new Input();
         expect(input.actionValedator('add')).toEqual('add');
