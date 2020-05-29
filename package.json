@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage --verbose",
-    "test-watch": "jest --coverage --verbose --watchAll"
+    "test-watch": "jest --coverage --verbose --watchAll",
+    "lint": "eslint 'ch**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -20,10 +21,13 @@
   "homepage": "https://github.com/401-advanced-javascript-ahmadkmal/notes#readme",
   "dependencies": {
     "@code-fellows/supergoose": "^1.0.2",
+    "dotenv": "^8.2.0",
     "minimist": "^1.2.5",
-    "mongoose": "^5.9.15"
+    "mongoose": "^5.9.15",
+    "superagent": "^5.2.2"
   },
   "devDependencies": {
+    "eslint": "^7.0.0",
     "jest": "^26.0.1"
   }
 }
