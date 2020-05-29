@@ -1,6 +1,6 @@
 'use strict';
 'use strict';
-
+require('dotenv').config();
 const Input = require('./lib/input.js');
 const mongoose = require('mongoose');
 const Note = require('./lib/note.js');
